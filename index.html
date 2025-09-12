@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project-Trial</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #e5e5e5;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      height: 5%;
+      width: 100%;
+      background-color: #0d0d0d; /* darkest */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Main content */
+    main {
+      height: 90%;
+      width: 100%;
+      background-color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 0 5%;
+    }
+
+    /* Description */
+    .description {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #dcdcdc; /* normal light gray */
+      width: 100%;
+    }
+
+    /* Categories */
+    .categories {
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(9, 1fr);
+      gap: 2%;
+      height: 60%; /* Categories take controlled space */
+    }
+
+    .category {
+      background-color: #2a2a2a;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+
+    .category:hover {
+      background-color: #3a3a3a;
+    }
+
+    /* Footer */
+    footer {
+      height: 5%;
+      width: 100%;
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    Project-Trial
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Description -->
+    <div class="description">
+      <strong>Project-Trial</strong> is a Minimal, Essential Tools Platform which provides you instant tools & services for daily personal and office use — plus some free time chill content.  
+      A unique space where productivity meets simplicity — something new, never seen before, and curious to be explored.
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+      <div class="category">1. Web Directory</div>
+      <div class="category">2. Utility</div>
+      <div class="category">3. Office</div>
+      <div class="category">4. Social</div>
+      <div class="category">5. Media</div>
+      <div class="category">6. Game</div>
+      <div class="category">7. Skill</div>
+      <div class="category">8. Motivation</div>
+      <div class="category">9. Premium</div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Project-Trial. All rights reserved.
+  </footer>
+</body>
+</html>
