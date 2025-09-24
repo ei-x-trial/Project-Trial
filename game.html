@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - Project-Trial</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; width:100%; font-family:"Segoe UI", Arial, sans-serif; background:#1a1a1a; color:#e5e5e5; }
+    body { display:flex; flex-direction:column; }
+
+    header { height:5%; width:100%; background:#0d0d0d; display:flex; align-items:center; justify-content:center; font-size:1.2rem; font-weight:bold; letter-spacing:2px; text-transform:uppercase; }
+
+    main { flex:1; width:100%; display:flex; flex-direction:column; text-align:center; padding:1% 5%; }
+
+    .content-section { display:flex; flex-direction:column; flex:1; justify-content:space-around; }
+
+    .description { font-size:0.95rem; line-height:1.3; color:#dcdcdc; margin-bottom:1%; }
+    .category-label { font-size:1rem; text-decoration:underline; margin:2% 0; }
+
+    /* Grid style */
+    .online-grid, .offline-grid { width:100%; display:grid; grid-template-columns:repeat(3,1fr); grid-gap:2%; }
+    .platform, .offline-game { background:#2a2a2a; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.9rem; transition:background 0.3s; text-decoration:none; color:#e5e5e5; padding:10px; }
+    .platform:hover, .offline-game:hover { background:#3a3a3a; }
+
+    footer { height:5%; width:100%; background:#0d0d0d; display:flex; align-items:center; justify-content:center; font-size:0.8rem; }
+  </style>
+</head>
+<body>
+  <header>Games</header>
+  <main>
+    <div class="content-section">
+      <!-- Main description -->
+      <div class="description">
+        Explore <strong>Online and Offline Games</strong>.  
+        Two modes: <em>Online</em> to play top global games, and <em>Offline</em> for casual local games directly in your browser.
+      </div>
+
+      <!-- Online Games Section -->
+      <div class="category-label">Online Games</div>
+      <div class="description">
+        Play the most popular mobile games based on user base. Connect, compete, and enjoy these top 9 mobile games online.
+      </div>
+      <div class="online-grid">
+        <a href="#" class="platform">Roblox</a>
+        <a href="#" class="platform">Candy Crush Saga</a>
+        <a href="#" class="platform">Free Fire</a>
+        <a href="#" class="platform">PUBG Mobile</a>
+        <a href="#" class="platform">Royal Match</a>
+        <a href="#" class="platform">Honkai: Star Rail</a>
+        <a href="#" class="platform">Brawl Stars</a>
+        <a href="#" class="platform">Honor of Kings</a>
+        <a href="#" class="platform">Coin Master</a>
+      </div>
+
+      <!-- Offline Games Section -->
+      <div class="category-label">Offline Games</div>
+      <div class="description">
+        Play casual offline games directly in your device browser. Perfect for quick entertainment without internet.  
+        Nine offline games ready to enjoy anytime.
+      </div>
+      <div class="offline-grid">
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+        <div class="offline-game">-</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 Project-Trial. All rights reserved.</footer>
+</body>
+</html>
